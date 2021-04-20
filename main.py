@@ -9,6 +9,6 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/method")
 def root():
-    return {"message": "Hello world!"}
+    return {"method": "GET"}
